@@ -105,13 +105,16 @@ er<!DOCTYPE html>
     <script>
         function acessarAreaInterna() {
             const senha = document.getElementById('senha').value;
-            const conteudo = document.getElementById('conteudo-restrito');
+
+            // Verifica se a senha está correta
             if (senha === 'Sete Raios') {
-                conteudo.style.display = 'block';
+                // Se a senha estiver correta, redireciona para a nova página
+                window.location.href = 'nova_pagina.html';  // Substitua pelo caminho da sua nova página
             } else {
+                // Caso contrário, exibe um alerta de erro
                 alert('Senha incorreta!');
             }
-            return false;
+            return false;  // Impede o envio do formulário
         }
     </script>
 	<!-- Google tag (gtag.js) -->
