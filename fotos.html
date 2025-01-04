@@ -1,142 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Fotos</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa de Caridade Sete Raios Sagrados de Aruanda</title>
     <style>
+        /* Estilos Gerais */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
+            color: #333;
         }
-        header {
-            background-color: #b10606;
-            color: #fff;
+
+        .header {
+            text-align: center;
             padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #b10606
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 20px;
-        }
-        nav a:hover {
             background-color: #b10606;
-        }
-        section {
-            padding: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 1px;
-            background-color: #0a0909;
             color: #fff;
         }
-        .protected {
-            display: none;
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #343a40;
+            color: #fff;
+            margin-top: 20px;
         }
     </style>
-    </head>
-    <body>
-        <header>
-        <a href="index.html" class="logo">
-            <img src="logo.png" alt="Logo da Casa de Caridade" style="width: 150px; height: auto;">
-            <h1>Casa de Caridade Sete Raios Segrados de Aruanda</h1>
-          </a>
-        </header>
-
+</head>
 <body>
-    <header>
+    <div class="header">
         <h1>Galeria de Fotos</h1>
-    </header>
-       <section class="galeria">
-        <h1>Fotos da Homenagem para Ogum 2024</h1>
-        <div class="foto">
-            <img src="Imagens/Festadeogum1.png" alt="Descrição da Foto 1">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadeogum2.png" alt="Descrição da Foto 2">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadeogum3.png" alt="Descrição da Foto 3">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadeogum4.png" alt="Descrição da Foto 4">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadeogum5.png" alt="Descrição da Foto 5">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadeogum6.png" alt="Descrição da Foto 6">
-        </div>
-        <h1>Fotos da Homenagem para Oxossi 2024</h1>
-        <div class="foto">
-            <img src="Imagens/festadeoxossi1.png" alt="Descrição da Foto 1">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/festadeoxossi2.png" alt="Descrição da Foto 2">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/festadeoxossi3.png" alt="Descrição da Foto 3">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/festadeoxossi4.png" alt="Descrição da Foto 4">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/festadeoxossi5.png" alt="Descrição da Foto 5">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/festadeoxossi6.png" alt="Descrição da Foto 6">
-        </div>
-        <h1>Fotos da Homenagem para Nanã 2024</h1>
-        <div class="foto">
-            <img src="Imagens/Festadenana1.png" alt="Descrição da Foto 1">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadenana2.png" alt="Descrição da Foto 2">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadenana3.png" alt="Descrição da Foto 3">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadenana4.png" alt="Descrição da Foto 4">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadenana5.png" alt="Descrição da Foto 5">
-        </div>
-        <p>.</p>
-        <div class="foto">
-            <img src="Imagens/Festadenana6.png" alt="Descrição da Foto 5">
-        </div>
-        <p>.</p>
-        <!-- Adicione mais fotos conforme necessário -->
-    </section>
+        <p>Explore um pouco das nossas fotos</p>
+    </div>
+    <div class="gallery">
+        <h1>Fotos da Homenagem para Ogum</h1>
+        <!-- Substitua os links abaixo pelas URLs das suas imagens -->
+        <img src="Imagens/Festadeogum1.png" alt="Descrição da Imagem 1">
+        <img src="Imagens/Festadeogum2.png" alt="Descrição da Imagem 2">
+        <img src="Imagens/Festadeogum3.png" alt="Descrição da Imagem 3">
+        <img src="Imagens/Festadeogum4.png" alt="Descrição da Imagem 4">
+    </div>
+    
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #b10606;
+            color: #fff;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #343a40;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <h1>Fotos da Homenagem para Oxossi</h1>
+        <!-- Substitua os links abaixo pelas URLs das suas imagens -->
+        <img src="Imagens/festadeoxossi1.png" alt="Descrição da Imagem 1">
+        <img src="Imagens/festadeoxossi6.png" alt="Descrição da Imagem 2">
+        <img src="Imagens/festadeoxossi3.png" alt="Descrição da Imagem 3">
+        <img src="Imagens/Festadeoxossi4.png" alt="Descrição da Imagem 4">
+    </div>
+
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #b10606;
+            color: #fff;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0a0909;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <h1>Fotos da Homenagem para Oxossi</h1>
+        <!-- Substitua os links abaixo pelas URLs das suas imagens -->
+        <img src="Imagens/Festadenana3.png" alt="Descrição da Imagem 1">
+        <img src="Imagens/festadenana2.png" alt="Descrição da Imagem 2">
+        <img src="Imagens/festadenana1.png" alt="Descrição da Imagem 3">
+        <img src="Imagens/Festadenana4.png" alt="Descrição da Imagem 4">
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Sete Raios Sagrados de Aruanda. Todos os direitos reservados.</p>
+    </div>
 </body>
 </html>
